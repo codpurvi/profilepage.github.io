@@ -1,0 +1,427 @@
+body{
+    background-color:#fff;
+    margin:0px;
+    padding:0px;
+   }
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  section{
+    width:100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+   }
+  
+  .nav {
+    height: 100px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #0B0B0B;
+    font-family: "Lato", sans-serif;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #EA584F;
+  }
+  
+  .nav > .nav-links > a:hover {
+    color: red;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 80px;
+      
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+        
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  /*Navbar Logo Image*/
+
+.nav img {
+    width: 150px;
+    display: inline;
+}
+
+.nav img:hover {
+    color: #EA584F;
+}
+
+.text-container p:nth-child(1){
+    font-family: calibri;
+    font-weight:bold;
+    color:#EA584F;
+    font-size:30px;
+   }
+   .text-container p:nth-child(2){
+    font-family:calibri;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:red;
+    font-size:100px;
+    
+   }
+   .text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #a8b2d1;
+    font-size:60px;
+    line-height:60px;
+   }
+    
+   .text-container p{
+    margin:60px 0px 25px;
+    line-height:0px;
+   }
+   .text-container button{
+    width:150px;
+    height:50px;
+    border-radius:10px;
+    font-family:calibri;
+    font-weight:bold;
+    font-size: 14px;
+    outline:none;
+    margin:0px 10px;
+    
+   }
+   .text-container{
+    position: absolute;
+    left:30%;
+    top:42%;
+    transform:translate(-13%,-42%);
+   }
+   .hire-btn{
+    border:2px solid #EA584F;
+    color:#EA584F;
+    background-color:transparent;
+    
+   }
+   .down-cv{
+    background-color:#0B0B0B;
+    color:#fff; 
+    border:none;
+   }
+   
+button:active{
+    transform:scale(1.1);
+   }
+   .about-container{
+    width:80%;
+    border:20px solid black;
+    color:#EA584F;
+    height:450px;
+    border-radius:20px;
+    background-color: white;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7%  auto 20px auto;
+    position: relative;
+    justify-content:space-evenly;
+    align-items: center;
+   }
+   .about-container img{
+    height:250px;
+   }
+   .about-text{
+    width:500px;
+   } 
+   .about-text p:nth-child(1){
+    color:black;
+    font-family: myriad pro;
+    font-weight:bold;
+    font-size:50px;
+    line-height:0px;
+   }
+   .about-text p:nth-child(2){
+    color:black;
+    font-size:30px;
+    font-family: myriad pro;
+    font-weight:bold;
+    line-height:5px;
+   }
+   .about-text p:nth-child(3),.about-text p:nth-child(4){
+    color:black;
+    font-family:calibri;
+    font-size:20px;
+   }
+
+   .services{
+    height:800px;
+    padding: 2% 10% 0px 10%;
+    
+   }
+   .services-text p:nth-child(1){
+    font-family: calibri;
+    font-weight:bold;
+    color:#EA584F;
+    font-size:60px;
+    line-height:0px;
+   }
+   .services-text p:nth-child(2){
+    font-family:calibri;
+    font-weight: bold;
+    color:#7e7d7d;
+    font-size: 25px;
+    line-height: 5px;
+   }
+   .services-text p:nth-child(3){font-family:calibri;
+    color:black;}
+   .services-text{
+    align-content: center;
+    width: 1500px;
+    font-size: 25px;
+    margin:50px 0px;
+   }
+   .box-container{
+    display:flex;
+    justify-content:space-between;
+   }
+   .box-1,.box-2,.box-3{
+    width: 300px;
+    height:320px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    box-shadow:20px 20px 18px rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 4px;
+    
+    
+   }
+    
+
+   .box-1 span,
+   .box-2 span,
+   .box-3 span{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: calibri;
+    font-weight: bold;
+   }
+   .box-1 p:nth-child(2),
+   .box-2 p:nth-child(2),
+   .box-3 p:nth-child(2){
+    color:#FFFFFF;
+    font-family: calibri;
+    font-size: 23px;
+    line-height:0px;
+   }
+   .box-1 p:nth-child(3),
+   .box-2 p:nth-child(3),
+   .box-3 p:nth-child(3){
+    font-family: calibri;
+    color:#8F8F8F;
+    text-align:center;
+    width: 230px;
+    margin:0px 0px 20px 0px;
+   }
+   .box-1 button,
+   .box-2 button,
+   .box-3 button{
+    width:100px;
+    height:30px;
+    background-color:#FFFFFF;
+    border:none;
+    outline: none;
+    border-radius:5px;
+   }
+   .contact-me{
+    width: 100%;
+    height:280px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image: url("red.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+   }
+   .contact-me p{
+    color:#FFFFFF;
+    font-size: 30px;
+    font-family: calibri;
+    font-weight:bold;
+    border-bottom:2px solid #ffffff;
+   }
+   .contact-me button{
+    width:200px;
+    height:40px;
+    background-color: #FFFFFF;
+    border:none;
+    outline:none;
+    font-size:14px;
+    font-weight:bold;
+   }
+   footer p{
+    font-family: calibri;
+    color: #fff;
+   }
+   footer p:nth-child(1){
+    font-size: 30px;
+    font-weight:bold;
+    color:#fff;
+    line-height:10px;
+   }
+   footer p:nth-child(2){
+    font-size: 16px;
+    color:#7e7d7d;
+    width:600px;
+    text-align: center;
+   }
+   footer{
+       background-color: #0B0B0B;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   }
+   .social-icons a{
+    width:40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6e3e3;
+    margin:20px 10px;
+    border-radius:50%;
+   }
+   .social-icons{
+    display: flex;
+    
+   }
+   .social-icons i,.social i{
+    color:#000000;
+   }
+   .social-icons a:hover{
+    background-color:#000000;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    transition:all ease 0.5s;
+   }
+   .social-icons a:hover i,
+   .social a:hover i{
+    color:#FFFFFF;
+    transition:all ease 0.5s;
+   }
+    
+   .copyright{
+    color:#565555;
+    font-size: 12px;
+    position: absolute;
+    left:50%;
+    bottom:10px;
+    transform: translateX(-50%);
+   }
+   .social{
+    position: fixed;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+   }
+   .social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    margin:0px;
+    padding: 0px;
+    line-height:0px;
+    background-color:#FFFFFF;
+    border:1px solid #CBCBCB;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+   }
+   .social a:hover{
+    background-color:#000000;
+    transition:all ease 0.5s;
+   }
+   .social i{
+    font-size:20px;
+    color:#2B2B2B;
+   }
+
+
+
