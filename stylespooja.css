@@ -185,7 +185,7 @@ button:active{
     height:450px;
     border-radius:20px;
     background-color: white;
-    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    box-shadow:20px 20px 12px rgba(0,0,0,0.2);
     display: flex;
     margin: -7%  auto 20px auto;
     position: relative;
